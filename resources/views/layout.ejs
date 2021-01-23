@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findr</title>
+    <link rel="icon" href="/img/piz1.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+    <div class="relative  pt-6 px-4 py-4 sm:px-6 lg:px-8">
+        <nav class="container mx-auto flex items-center justify-between" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="/">
+                        <span class="sr-only">Workflow</span>
+                        <img class="h-8 w-auto sm:h-10" src="/img/findr-logo.png">
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                        <button type="button"
+                            class=" bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            id="main-menu" aria-haspopup="true">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Heroicon name: menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu start -->
+            <div id="mobile-menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden ">
+                <div class="my-18 pb-100 rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                  <div class="px-5 pt-4 flex items-center justify-between">
+                    <div>
+                      <img class="h-8 w-auto" src="/img/findr-logo.png" alt="">
+                    </div>
+                    <div class="-mr-2">
+                      <button id="close-menu" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span class="sr-only">Close main menu</span>
+                        <!-- Heroicon name: x -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                    <div class=" px-2 pt-2 pb-3 space-y-1" role="none">
+                      <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Home</a>
+        
+                      <a href="/portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Portfolio</a>
+        
+                      <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">About us</a>
+        
+                      <a href="/contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Contact</a>
+                    </div>
+                    <div class=" mx-auto text-center">
+                      <a href="/shop"class="inline-block block w-1/2 px-5 py-3 mb-5 text-center font-bold rounded-md text-white hover:text-indigo-450 border border-transparent text-base bg-indigo-600 hover:bg-indigo-700 ">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Menu -->
+
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <ul class="flex items-center">
+                    <li class="ml-6">
+                        <a href="/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+                    </li>
+                    <li class="ml-6">
+                        <a href="/portfolio" class="font-medium text-gray-500 hover:text-gray-900">Portfolio</a>
+                    </li>
+                    <li class="ml-6">
+                        <a href="/about" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
+                    </li>
+                    <li class="ml-6">
+                        <a href="/contact" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+                    </li>
+                    <li class="ml-6">
+                        <a href="/shop"class="font-bold rounded-md text-white hover:text-indigo-450 border border-transparent text-base bg-indigo-600 hover:bg-indigo-700 md:py-2 md:text-sm md:px-5">SHOP NOW</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <%- body %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <a href="https://api.whatsapp.com/send?phone=+2348124001778&text=Hello%21%20Saizzler%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> -->
+        <footer>
+            <div class="w-full bg-blue-900">
+                <div class="flex flex-wrap text-center text-white">
+          
+                  <!-- ABOUT COLUMN -->
+          
+                  <div class="w-full md:w-1/2 p-5 border-r border-blue-800 md:text-left">
+                    <div class="my-6 ml-3 text-xl font-semibold">ABOUT US</div>
+                    <p class="p-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac est massa. Donec eget elementum sapien, tincidunt tempor nunc. Cras sodales id ipsum at convallis.</p>
+                    <p class="p-3 text-gray-400">Morbi tristique massa nec massa auctor, at scelerisque felis consectetur. Morbi tempus et odio sit amet feugiat. Maecenas dignissim a turpis in molestie. Fusce tincidunt vestibulum iaculis.</p>
+                  </div>
+          
+                  <!-- CONTACTS COLUMN -->
+          
+                  <div class="w-full md:w-1/2 p-5 border-r border-blue-800">
+                    <div class="my-6 text-xl font-semibold">CONTACT US</div>
+                    <p class="mt-8 text-gray-400">
+                      10A Kola Amodu Crescent <br>
+                      Magodo GRA Phase 2, <br>
+                      Lagos State <br>
+                      <strong>Phone:</strong> +2348124001778 <br>
+                      <strong>Email:</strong> Saizzlerdesigns@gmail.com
+                    </p>
+                    <div class="relative w-20 h-20 mx-auto my-12 bg-blue-300 rotate-45">
+                      <div class="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-blue-800 cursor-pointer">
+                        <i class="fab fa-facebook-f fa-lg text-blue-500 -rotate-45"></i>
+                      </div>
+                      <div class="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-blue-800 cursor-pointer">
+                          <a href="https://twitter.com/arc_saizzler">
+                        <i class="fab fa-twitter fa-lg text-blue-500 -rotate-45"></i>
+                    </a>
+                      </div>
+                      <div class="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-blue-800 cursor-pointer">
+                        <i class="fab fa-google-plus-g fa-lg text-blue-500 -rotate-45"></i>
+                      </div>
+                      <div class="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-blue-800 cursor-pointer">
+                        <i class="fab fa-linkedin-in fa-lg text-blue-500 -rotate-45"></i>
+                      </div>
+                    </div>
+                  </div>
+        </footer>
+        <div>
+            <p class="text-center text-gray-500 text-xs pt-2 pb-2">
+                &copy;2020 Nural Network. All rights reserved.
+            </p>
+        </div>
+
+        <script src="/js/app.js"></script>
+
+</body>
+
+</html>
